@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--espacio-md) 0 var(--espacio-lg) 0;
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--borde-radio);
+    overflow: hidden;
+}
+
+caption {
+    font-variant: small-caps;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-primario);
+    padding: var(--espacio-sm);
+    text-align: left;
+    caption-side: top;
+    margin-bottom: var(--espacio-xs);
+    font-family: var(--fuente-titulos);
+}
+
+th, td {
+    padding: 12px 16px;
+    border: 1px solid var(--color-borde);
+    text-align: left;
+    vertical-align: middle;
+}
+
+thead th {
+    background-color: var(--color-tabla-cabecera);
+    color: var(--color-texto-blanco);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-family: var(--fuente-titulos);
+}
+
+th[scope="row"] {
+    background-color: #f6f0f8;
+    font-weight: 600;
+    color: var(--color-primario-oscuro);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--color-superficie);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--color-tabla-cebra);
+}
+
+tbody tr:hover {
+    background-color: var(--color-tabla-hover);
+}
+
+fieldset {
+    border: 1px solid var(--color-borde);
+    border-radius: var(--borde-radio);
+    padding: var(--espacio-md) var(--espacio-lg);
+    margin-bottom: var(--espacio-lg);
+    background-color: #fcfaff;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+legend {
+    font-weight: 700;
+    color: var(--color-primario);
+    padding: 0 var(--espacio-sm);
+    font-size: 1.15rem;
+    font-family: var(--fuente-titulos);
+}
+
+form:focus-within,
+fieldset:focus-within {
+    background-color: #fcf5ff;
+    border-color: var(--color-secundario);
+}
+
+label {
+    display: inline-block;
+    min-width: 180px;
+    margin-bottom: var(--espacio-xs);
+    font-weight: 600;
+    color: var(--color-texto);
+    vertical-align: top;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    max-width: 450px;
+    padding: 10px 12px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: var(--color-texto);
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-boton);
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: var(--color-foco-fondo);
+    border-color: var(--color-foco);
+}
+
+input[type="submit"],
+input[type="reset"],
+button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 10px 24px;
+    background-color: var(--color-primario);
+    color: var(--color-texto-blanco);
+    border: 1px solid var(--color-primario-oscuro);
+    border-radius: var(--radio-boton);
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: var(--color-secundario);
+}
+
+.centrado {
+    display: block;
+    margin: var(--espacio-lg) auto 0 auto;
+}
+
+.breadcrumb {
+    list-style: none;
+    padding: var(--espacio-sm) 0;
+    margin: 0 0 var(--espacio-md) 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.breadcrumb-item {
+    display: inline-flex;
+    align-items: center;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: var(--color-texto-secundario);
+    font-weight: bold;
+}
+
+.breadcrumb-item a {
+    color: var(--color-secundario);
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: var(--color-texto-secundario);
+    font-weight: 600;
+}
+
+.icono-biblioteca,
+i.fa-solid,
+i.fa-brands {
+    margin-right: 0.4rem;
+    vertical-align: middle;
+    font-size: 1.05em;
+}
+
+.icono-unicode {
+    margin-right: 0.4rem;
+    font-style: normal;
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 1.1em;
+}

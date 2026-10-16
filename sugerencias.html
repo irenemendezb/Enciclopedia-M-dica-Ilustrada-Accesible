@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sugerencias | Enciclopedia Médica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+    
+    <!-- Cabecera -->
+    <header>
+        <h1>Enciclopedia Médica</h1>
+        <nav aria-label="Ruta de navegación">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Sugerencias</li>
+            </ol>
+        </nav>
+    </header>
+
+    <!-- Menú de navegación (Rutas directas al estar en la raíz) -->
+    <nav>
+        <ul>
+            <li><a href="Mapa.html"><i class="fa-solid fa-sitemap" aria-hidden="true"></i> Mapa</a></li>
+            <li><a href="A/indice_a.html">A</a></li>
+            <li><a href="error/error.html">B</a></li>
+            <li><a href="error/error.html">C</a></li>
+            <li><a href="error/error.html">D</a></li>
+            <li><a href="error/error.html">E</a></li>
+            <li><a href="error/error.html">F</a></li>
+            <li><a href="error/error.html">G</a></li>
+            <li><a href="error/error.html">H</a></li>
+            <li><a href="I/indice_i.html">I</a></li>
+            <li><a href="error/error.html">J</a></li>
+            <li><a href="error/error.html">K</a></li>
+            <li><a href="L/indice_l.html">L</a></li>
+            <li><a href="error/error.html">M</a></li>
+            <li><a href="error/error.html">N</a></li>
+            <li><a href="error/error.html">Ñ</a></li>
+            <li><a href="error/error.html">O</a></li>
+            <li><a href="error/error.html">P</a></li>
+            <li><a href="error/error.html">Q</a></li>
+            <li><a href="error/error.html">R</a></li>
+            <li><a href="error/error.html">S</a></li>
+            <li><a href="error/error.html">T</a></li>
+            <li><a href="error/error.html">U</a></li>
+            <li><a href="error/error.html">V</a></li>
+            <li><a href="error/error.html">W</a></li>
+            <li><a href="error/error.html">X</a></li>
+            <li><a href="error/error.html">Y</a></li>
+            <li><a href="error/error.html">Z</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido -->
+    <main id="contenido-principal">
+        <article>
+            <header>
+                <h2>Sugerir un nuevo artículo médico</h2>
+            </header>
+
+            <section>
+                <p>¿No encuentras la enfermedad o afección que buscabas? Ayúdanos a mejorar nuestra enciclopedia enviando tu sugerencia. <br>
+                <strong>Atención:</strong> Los campos marcados con un asterisco (*) son de cumplimentación obligatoria para procesar tu solicitud.</p>
+
+                <form action="respuesta_sugerencias.html" method="get">
+                    <fieldset>
+                        <legend>Datos de la sugerencia</legend>
+                        <p>
+                            <label for="enfermedad"><span class="icono-unicode">&#128214;</span> Artículo (*):</label>
+                            <input type="text" id="enfermedad" name="enfermedad" required placeholder="Ej: Esclerosis múltiple">
+                        </p>
+                        
+                        <p>
+                            <label for="detalles">Detalles o síntomas:</label><br>
+                            <textarea id="detalles" name="detalles" rows="4" cols="50" placeholder="Escribe aquí más información..."></textarea>
+                        </p>
+                        
+                        <p>
+                            <label for="correo"><span class="icono-unicode">&#9993;</span> Correo (*):</label>
+                            <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+                        </p>
+
+                        <p>
+                            <label for="fecha">Fecha de búsqueda (*):</label>
+                            <input type="date" id="fecha" name="fecha" required>
+                        </p>
+
+                        <p>
+                            <label for="edad">Tu edad (*):</label>
+                            <input type="number" id="edad" name="edad" min="14" max="120" required>
+                        </p>
+
+                        <p>
+                            <label for="cp">Código Postal:</label>
+                            <input type="text" id="cp" name="cp" pattern="[0-9]{5}" placeholder="Ej: 03690">
+                            <small>Debe contener exactamente 5 dígitos numéricos.</small>
+                        </p>
+
+                        <p>
+                            <label for="valoracion">Utilidad (1 al 10):</label>
+                            <input type="range" id="valoracion" name="valoracion" min="1" max="10" step="1">
+                        </p>
+
+                        <p>
+                            <label for="color">Color sugerido:</label>
+                            <input type="color" id="color" name="color" value="#f0f8ff">
+                        </p>
+
+                        <p>
+                            <input type="submit" value="Enviar sugerencia" class="centrado">
+                        </p>
+                    </fieldset>
+                </form>
+            </section>
+        </article>
+    </main>
+
+    <!-- Pie de Página (no se cambia en ningún momento) -->
+    <footer>
+        <address>
+        Autora: Lara Bañuls Martínez e Irene Méndez Botías<br>
+        Universidad de Alicante<br>
+        Contacto: <a href="contacto.html">Formulario de contacto</a>
+        </address>
+        <p>Grado en Ingeniería Biomédica, Universidad de Alicante</p>
+        <p>&copy; 2026 Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

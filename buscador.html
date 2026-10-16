@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscador de Artículos - Enciclopedia Biomédica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+    <header>
+        <h1>Enciclopedia Biomédica</h1>
+        <nav aria-label="Ruta de navegación">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Buscador</li>
+            </ol>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i> Inicio</a></li>
+                <li><a href="buscador.html"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> Buscador</a></li>
+                <li><a href="contacto.html"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contacto</a></li>
+                <li><a href="Mapa.html"><i class="fa-solid fa-sitemap" aria-hidden="true"></i> Mapa</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="contenido-principal">
+        <h2>Buscador de patologías</h2>
+        <p>El campo de descripción marcado con (*) es obligatorio.</p>
+        
+        <form action="respuesta_buscador.html" method="get">
+            <fieldset>
+                <legend>Criterios clínicos</legend>
+                
+                <p>
+                    <label for="descripcion"><span class="icono-unicode">&#128269;</span> Descripción (*):</label>
+                    <input type="text" id="descripcion" name="descripcion" required>
+                </p>
+                
+                <p>
+                    <label for="causas">Causas:</label>
+                    <input type="text" id="causas" name="causas">
+                </p>
+                
+                <p>
+                    <label for="sintomas">Síntomas (puedes seleccionar varios):</label><br>
+                    <select id="sintomas" name="sintomas" multiple size="5">
+                        <option value="fiebre">Fiebre</option>
+                        <option value="vomito">Vómito</option>
+                        <option value="diarrea">Diarrea</option>
+                        <option value="dolor_muscular">Dolor muscular</option>
+                        <option value="fatiga">Fatiga</option>
+                    </select>
+                </p>
+                
+                <p>
+                    <label for="pruebas">Pruebas y exámenes (puedes seleccionar varios):</label><br>
+                    <select id="pruebas" name="pruebas" multiple size="5">
+                        <option value="analisis_sangre">Análisis de sangre</option>
+                        <option value="ecografia">Ecografía</option>
+                        <option value="radiografia">Radiografía</option>
+                        <option value="tomografia">Tomografía</option>
+                        <option value="ultrasonido">Ultrasonido</option>
+                    </select>
+                </p>
+                
+                <p>
+                    <label for="tratamiento">Tratamiento:</label>
+                    <input type="text" id="tratamiento" name="tratamiento">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Expectativas y pronóstico</legend>
+                
+                <p>
+                    <input type="radio" id="exp_negativas" name="expectativas" value="negativas">
+                    <label for="exp_negativas">Negativas</label>
+                </p>
+                <p>
+                    <input type="radio" id="exp_sindefinir" name="expectativas" value="sindefinir">
+                    <label for="exp_sindefinir">Sin definir</label>
+                </p>
+                <p>
+                    <input type="radio" id="exp_positivas" name="expectativas" value="positivas">
+                    <label for="exp_positivas">Positivas</label>
+                </p>
+            </fieldset>
+            
+            <button type="submit" class="centrado"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> Buscar artículo</button>
+        </form>
+    </main>
+
+    <footer>
+        <address>
+        Autora: Lara Bañuls Martínez e Irene Méndez Botías<br>
+        Universidad de Alicante<br>
+        Contacto: <a href="contacto.html">Formulario de contacto</a>
+        </address>
+        <p>Grado en Ingeniería Biomédica, Universidad de Alicante</p>
+        <p>&copy; 2026 Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

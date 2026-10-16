@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Declaración de Accesibilidad | Enciclopedia Médica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+    
+    <!-- Cabecera -->
+    <header>
+        <h1>Enciclopedia Médica</h1>
+        <nav aria-label="Ruta de navegación">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Declaración de accesibilidad</li>
+            </ol>
+        </nav>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i> Inicio</a></li>
+            <li><a href="buscador.html"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> Buscador</a></li>
+            <li><a href="contacto.html"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contacto</a></li>
+            <li><a href="Mapa.html"><i class="fa-solid fa-sitemap" aria-hidden="true"></i> Mapa</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main id="contenido-principal">
+        <article>
+            <header>
+                <h2>Declaración de Accesibilidad</h2>
+            </header>
+
+           <section>
+                <h3>Compromiso con la accesibilidad</h3>
+                <p>Las autoras de este sitio web (Lara Bañuls Martínez e Irene Méndez Botías) nos hemos comprometido a hacer accesible la <strong>Enciclopedia Médica</strong> de conformidad con las pautas de accesibilidad <span lang="en">Web Content Accessibility Guidelines</span> (<abbr title="Web Content Accessibility Guidelines" lang="en">WCAG</abbr>) 2.x.</p>
+            </section>
+
+            <section>
+                <h3>Características de accesibilidad implementadas</h3>
+                <p>Para garantizar que cualquier usuario, independientemente de sus capacidades físicas, visuales o cognitivas, pueda navegar y comprender la información, se han aplicado las siguientes medidas:</p>
+                <ul>
+                    <li><strong>Separadores visuales mediante CSS:</strong> Los separadores de las rutas de migas de pan se generan mediante pseudo-elementos CSS (<code>::before</code>) para evitar que los lectores de pantalla anuncien caracteres como "mayor que".</li>
+                    <li><strong>Foco visible de alto contraste:</strong> Se garantiza que todos los elementos interactivos dispongan de un indicador de foco visible (<code>outline</code>) claramente distinguible al navegar con teclado.</li>
+                    <li><strong>Mecanismo de salto al contenido principal:</strong> Cada página dispone de un enlace directo (*skip link*) al inicio del documento para saltar los menús de navegación recurrentes.</li>
+                    <li><strong>Diseño adaptativo (Responsive Design):</strong> El sitio se adapta fluidamente a distintas resoluciones de pantalla (desde móviles de 480px hasta monitores de alta resolución) respetando la orientación horizontal y vertical.</li>
+                    <li><strong>Zonas interactivas táctiles adecuadas:</strong> Los enlaces y botones cuentan con dimensiones mínimas de interacción táctil suficientes para usuarios con dificultades motoras.</li>
+                    <li><strong>Identificación del idioma principal:</strong> Se ha definido el idioma principal español mediante el atributo <code>lang="es"</code> en la etiqueta raíz <code>&lt;html&gt;</code> de todas las páginas web.</li>
+                    <li><strong>Cambios de idioma en pasajes de texto:</strong> Se han identificado los términos técnicos, expresiones y pasajes en otros idiomas (como el inglés) mediante el atributo <code>lang="en"</code> utilizando etiquetas como <code>&lt;span&gt;</code> o <code>&lt;q&gt;</code>.</li>
+                    <li><strong>Abreviaturas y acrónimos:</strong> Se han etiquetado las siglas y términos médicos abreviados mediante la etiqueta <code>&lt;abbr&gt;</code> indicando su significado completo en el atributo <code>title</code> la primera vez que aparecen en el texto.</li>
+                    <li><strong>Marcado semántico de HTML5:</strong> Se han utilizado etiquetas estructuradas como <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code> y <code>&lt;footer&gt;</code>.</li>
+                    <li><strong>Encabezados jerárquicos:</strong> Los títulos de las páginas siguen una estructura lógica de niveles (desde <code>&lt;h1&gt;</code> hasta <code>&lt;h3&gt;</code>) sin saltos de jerarquía.</li>
+                    <li><strong>Textos alternativos en imágenes y multimedia:</strong> Todas las imágenes informativas e ilustrativas disponen de un atributo <code>alt</code> descriptivo.</li>
+                    <li><strong>Accesibilidad en formularios:</strong> Todos los controles de entrada de datos están explícitamente asociados a sus respectivas etiquetas mediante la etiqueta <code>&lt;label&gt;</code> y el atributo <code>for</code>.</li>
+                    <li><strong>Estructura de tablas de datos:</strong> Las tablas incluyen títulos con <code>&lt;caption&gt;</code>, y celdas de cabecera con <code>&lt;thead&gt;</code>, <code>&lt;th&gt;</code> y el atributo <code>scope</code>.</li>
+                    <li><strong>Mecanismos de navegación y orientación:</strong> Se ha implementado un <a href="Mapa.html">Mapa del sitio web</a> estructurado y una ruta de migas de pan (*breadcrumbs*) en todas las páginas secundarias.</li>
+                    <li><strong>Títulos de página únicos:</strong> Cada página del sitio web cuenta con un elemento <code>&lt;title&gt;</code> único y descriptivo.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Atención y contacto</h3>
+                <p>Si encuentras alguna barrera de accesibilidad en nuestra web o necesitas consultar información en un formato alternativo, puedes ponerte en contacto con nosotras a través de nuestro <a href="contacto.html">formulario de contacto</a>.</p>
+            </section>
+        </article>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <address>
+        Autora: Lara Bañuls Martínez e Irene Méndez Botías<br>
+        Universidad de Alicante<br>
+        Contacto: <a href="contacto.html">Formulario de contacto</a>
+        </address>
+        <p>Grado en Ingeniería Biomédica, Universidad de Alicante</p>
+        <p>&copy; 2026 Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

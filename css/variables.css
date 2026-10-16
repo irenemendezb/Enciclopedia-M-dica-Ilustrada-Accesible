@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+:root {
+    --color-primario: #441752;
+    --color-primario-oscuro: #2b0936;
+    --color-secundario: #5c1d73;
+    --color-secundario-hover: #1e0724;
+    --color-acento: #7a1cac;
+    --color-fondo: #f8f6f9;
+    --color-superficie: #ffffff;
+    
+    --color-texto: #221d24;
+    --color-texto-secundario: #544957;
+    --color-texto-blanco: #ffffff;
+
+    --color-borde: #d8cfe0;
+    --color-borde-fuerte: #441752;
+    
+    --color-foco: #e65100;
+    --color-foco-fondo: #fff8e1;
+    
+    --color-tabla-cabecera: #441752;
+    --color-tabla-cebra: #f3edf7;
+    --color-tabla-hover: #e8dcf0;
+    
+    --color-anuncio-fondo: #fcf8ff;
+    --color-anuncio-borde: #7a1cac;
+    --color-anuncio-texto: #330842;
+
+ --fuente-titulos: "Playfair Display", "Georgia", "Palatino Linotype", serif;
+--fuente-cuerpo: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+    --altura-linea: 1.65;
+
+    --espacio-xs: 0.25rem;
+    --espacio-sm: 0.5rem;
+    --espacio-md: 1rem;
+    --espacio-lg: 1.5rem;
+    --espacio-xl: 2rem;
+    --ancho-maximo: 1150px;
+    --borde-radio: 4px;
+    --radio-boton: 3px;
+}

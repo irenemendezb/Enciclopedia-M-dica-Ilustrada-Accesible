@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Enciclopedia Biomédica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+    <header>
+        <h1>Enciclopedia Biomédica</h1>
+        <nav aria-label="Ruta de navegación">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+            </ol>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i> Inicio</a></li>
+                <li><a href="buscador.html"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> Buscador</a></li>
+                <li><a href="contacto.html"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contacto</a></li>
+                <li><a href="Mapa.html"><i class="fa-solid fa-sitemap" aria-hidden="true"></i> Mapa</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="contenido-principal">
+        <h2>Formulario de Contacto</h2>
+        <p>Los campos marcados con asterisco (*) son obligatorios.</p>
+        
+        <form action="respuesta_contacto.html" method="get">
+            <fieldset>
+                <legend>Datos de la consulta</legend>
+                
+                <p>
+                    <label for="asunto"><span class="icono-unicode">&#9998;</span> Asunto (*):</label>
+                    <input type="text" id="asunto" name="asunto" required>
+                </p>
+                
+                <p>
+                    <label for="comentario">Comentario o pregunta (*):</label><br>
+                    <textarea id="comentario" name="comentario" rows="5" cols="40" required></textarea>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos personales</legend>
+                
+                <p>
+                    <label for="perfil"><span class="icono-unicode">&#128100;</span> Yo soy:</label>
+                    <select id="perfil" name="perfil">
+                        <option value="paciente">Paciente</option>
+                        <option value="cientifico">Científico</option>
+                        <option value="medico">Médico</option>
+                        <option value="educador">Educador</option>
+                        <option value="fabricante">Fabricante</option>
+                        <option value="periodista">Periodista</option>
+                    </select>
+                </p>
+                
+                <p>
+                    <label for="fecha_nac">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha_nac" name="fecha_nac">
+                </p>
+                
+                <p>Sexo:</p>
+                <p>
+                    <input type="radio" id="sexo_hombre" name="sexo" value="hombre">
+                    <label for="sexo_hombre">Hombre</label>
+                </p>
+                <p>
+                    <input type="radio" id="sexo_mujer" name="sexo" value="mujer">
+                    <label for="sexo_mujer">Mujer</label>
+                </p>
+                <p>
+                    <input type="radio" id="sexo_otro" name="sexo" value="otro">
+                    <label for="sexo_otro">Otro</label>
+                </p>
+                
+                <p>
+                    <label for="email"><span class="icono-unicode">&#9993;</span> Correo electrónico:</label>
+                    <input type="email" id="email" name="email">
+                </p>
+                
+                <p>
+                    <input type="checkbox" id="mas_info" name="mas_info" value="si">
+                    <label for="mas_info">Deseo recibir más información</label>
+                </p>
+            </fieldset>
+            
+            <button type="submit" class="centrado"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enviar consulta</button>
+        </form>
+    </main>
+
+    <footer>
+        <address>
+        Autora: Lara Bañuls Martínez e Irene Méndez Botías<br>
+        Universidad de Alicante<br>
+        Contacto: <a href="contacto.html">Formulario de contacto</a>
+        </address>
+        <p>Grado en Ingeniería Biomédica, Universidad de Alicante</p>
+        <p>&copy; 2026 Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
